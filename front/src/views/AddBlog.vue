@@ -3,12 +3,13 @@
         <input
           v-model="blog.title"
           label="Title"
-        >
+          placeholder="タイトル"
+        ><br>
         <textarea
           v-model="blog.body"
           label="Body"
-        ></textarea>
-
+          placeholder="本文"
+        ></textarea><br>
         <button class="mr-4" @click="onSubmit">Create</button>
       </form>
 </template>
@@ -28,3 +29,14 @@ export default {
   }
 }
 </script>
+<style>
+  form{
+    margin-bottom:40px;
+  }
+  input,textarea{
+    width:300px;
+  }
+  textarea{
+    height:120px;
+  }
+</style>

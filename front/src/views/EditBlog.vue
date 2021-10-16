@@ -9,10 +9,11 @@
       <textarea
         v-model="blog.body"
         label="Body"
-      ></textarea>
+      ></textarea><br>
 
       <button class="mr-4" @click="updateBlog">Update</button>
     </form>
+    <router-link to="/blogs">Back</router-link>
   </div>
 </template>
 
@@ -34,3 +35,14 @@ export default {
   }
 }
 </script>
+<style>
+button{
+    border: 0.1px solid #333333;
+    width:80px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    appearance: none;
+}
+</style>
